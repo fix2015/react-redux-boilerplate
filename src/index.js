@@ -1,6 +1,15 @@
-import Form from "./js/components/Form";
-import ReactDOM from 'react-dom';
-import React from 'react';
+import React from 'react'
+import { render } from 'react-dom'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import App from './components/App'
+import rootReducer from './reducers'
 
-const wrapper = document.getElementById("container");
-wrapper ? ReactDOM.render(<Form />, wrapper) : false;
+const store = createStore(rootReducer)
+
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('container')
+)

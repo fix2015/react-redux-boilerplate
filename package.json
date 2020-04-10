@@ -19,7 +19,9 @@
   "homepage": "https://github.com/fix20152/react-redux-boilerplate#readme",
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -28,6 +30,7 @@
     "babel-loader": "^8.1.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.0.4",
+    "redux-devtools": "^3.5.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
